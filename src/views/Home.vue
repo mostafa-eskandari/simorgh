@@ -1,26 +1,30 @@
 <!-- صفحه اصلی -->
-<template>
-  <div class="home" ma-4 id="">
-    <v-flex>
-      <p id="test">zxdfvsdfgvsadz</p>
-      <v-btn class="hj" id="DOMContentLoaded" wrap @click="looaded">
+<template >
+  <div class="d-none" id="test3">
+    <div class="home" ma-4 id="test">
+      <v-flex>
+        <!-- serch style change event handler javascript++++++++++++ -->
+        <!--<p id="test">zxdfvsdfgvsadz</p>
+       <v-btn class="test" id="" wrap @click="looaded">
         somting
-      </v-btn>
-    </v-flex>
-    <div>
-      <div wrap class="wrapper">
-        <!-- <button class="accelerated box"></button> -->
-        <button class="janky box"></button>
+      </v-btn> -->
+      </v-flex>
+      <div>
+        <div wrap class="wrapper">
+          <!-- <button class="accelerated box"></button> 
+        <button class="janky box"></button>-->
+        </div>
+      </div>
+
+      <!-- <img alt="Vue logo" src="../assets/VueLogo.png"> -->
+      <HelloWorld msg="" />
+      <div my-5>
+        <svg-logo class="logo-fade-in--open" style="opacity: 0.5" />
+        <SvgLogoText class="logo-fade-in--open" style="opacity: 0.5" />
       </div>
     </div>
-
-    <!-- <img alt="Vue logo" src="../assets/VueLogo.png"> -->
-    <HelloWorld msg="" />
-    <div my-5>
-      <svg-logo class="logo-fade-in--open" style="opacity: 0.5" />
-    </div>
-    <SvgLogoText />
   </div>
+  
 </template>
 
 <script>
@@ -31,6 +35,11 @@ const SvgLogoText = () => import("@/components/SvgLogoText.vue");
 
 export default {
   name: "Home",
+  // data  {
+  //   return : {
+  //     PageVisibility: "hidden"
+  //   }
+  // },
   components: {
     SvgLogo,
     HelloWorld,
@@ -38,8 +47,12 @@ export default {
   },
   mounted: function () {
     setTimeout(() => {
-      var e = (document.getElementById("test").innerHTML = "adf;kjsdflvnsdf.,/vnkdsfuvnkjnxfvfd");
-      this.e.style.background = red;
+      document.getElementById("test").style.transition = "margin-top 950ms";
+      document.getElementById("test").style.willChange = "margin-top";
+      document.getElementById("test").style.marginTop = "20px";
+    }, 20);
+    setTimeout(() => {
+      document.getElementById("test3").style.visibility = "hidden";
     }, 2000);
   },
   methods: {},

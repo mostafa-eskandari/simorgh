@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Login from '../views/login.vue'
+import RedyLogin from '../views/RedyLogin.vue'
+import LoginLevelOne from '../views/LoginLevelOne.vue'
 
 Vue.use(VueRouter)
 
@@ -9,7 +10,12 @@ const routes = [
   {
     path: '/Login',
     name: 'Login',
-    component: Login
+    component: RedyLogin
+  },
+  {
+    path: '/LoginLevelOne',
+    name: 'LoginLevelOne',
+    component: LoginLevelOne
   },
   {
     path: '/',
